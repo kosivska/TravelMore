@@ -1,0 +1,43 @@
+@import 'base/reset.css';
+@import 'utils/mixins.less';
+@import 'layout/header.less';
+@import 'layout/navigation.less';
+@import 'layout/about.less';
+@import 'layout/sheme.less';
+@import 'layout/book-now-first.less';
+@import 'layout/book-now-second.less';
+@import 'layout/reviews.less';
+@import 'layout/footer.less';
+
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@font-face {
+	font-family: 'Aleo';
+	src: url('../fonts/aleoregular.woff2') format('woff2'), 
+	url('../fonts/aleoregular.woff') format('woff'), 
+	url('../fonts/aleoregular.ttf') format('truetype');
+}
+/*End Fonts*/
+
+/*Variables color*/
+@white: #FCFCFC;
+@blue: #5474FD;
+@dark-grey: #333333;
+/*End Variables color*/
+
+.external-wrapper {
+	color: @white;
+	max-width: 97%;
+	margin: 1.5% auto;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1200px;
+	width: 64%;
+	height: 100%;
+	
+	@media (max-width: 1130px) {
+		width: 77%;
+	}
+}

@@ -1,0 +1,85 @@
+.header {
+	background: url(../img/bg.jpg) no-repeat;
+	background-size: cover;
+	height: 548px;
+
+	@media (min-width: 1600px) {
+		height: 664px;
+	}
+	
+	@media (min-width: 1920px) {
+		height: 730px;
+	}
+	
+
+	.header-wrapper {
+		.flex-column;
+
+		.header-logo--size {
+			margin: 22% 0 3% 0;
+			text-align: center;
+
+			.header__title {
+				font-family: 'Josefin Sans', sans-serif;
+				font-size: 30px;
+				font-weight: 700;
+				letter-spacing: 7px;
+				padding: 5% 0%;
+				.uppercase;
+			}
+
+			.header__content {
+				font-family: 'Josefin Sans', sans-serif;
+				font-size: 14px;
+				letter-spacing: 5px;
+			}
+		}
+
+		.search-form {
+			background: @white;
+			border: 2px solid white;
+			display: flex;
+			min-height: 7%;
+			margin-bottom: 6%;
+			min-width: 57%;
+
+			.search-field {
+				border: none;
+				font-size: 11px;
+				letter-spacing: 1px;
+				text-align: center;
+				width: 77%;
+			}
+
+			.submit{
+				background: @blue url(../img/search.png) 92% 55% no-repeat;
+				background-size: 13%;
+				font-size: 11px;
+				width: 23%;
+				.buttons;
+
+				&:hover {
+					transform: scale(0.7);
+					transition-duration: 1s;
+				}
+			}
+		}
+		
+		.scroll {
+			background: url(../img/arrow.png) 48% 73% no-repeat;
+			color: @white;
+			font-family: 'Josefin Sans', sans-serif;
+			font-size: 14px;
+			min-height: 6%;
+			margin-bottom: 11%;
+			text-decoration: none;
+			.links-no-decoration;
+			
+			&:hover {
+				transform: scale(1.5);	
+				transition-duration: 0.5s;		
+			}
+		}
+	}
+}
+

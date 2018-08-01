@@ -1,0 +1,93 @@
+/*Mixins*/
+.links-no-decoration {
+	text-decoration: none;
+	color: @white;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.font-aleo {
+	font-family: 'Aleo';
+}
+
+.buttons {
+	cursor: pointer;
+	.uppercase;
+	.font-aleo;
+	border: none;
+	color: @white;
+
+	&:hover {
+		box-shadow: inset 0 0 0 30px #53a7ea;
+		transition: all 0.5s ease;
+	}
+}
+
+.book-now {
+	background-size: cover;
+	height: 519px;
+
+	@media (min-width: 1600px) {
+		height: 620px;
+	}
+	
+	@media (min-width: 1920px) {
+		height: 736px;
+	}
+
+	.book-now__content {
+		margin-top: 20%;
+		padding: 3%;
+		font-family: 'Josefin Sans', sans-serif;
+		font-weight: 100;
+		flex-direction: column;
+		justify-content: space-around;
+		opacity: 0.9;
+		width: 42%;
+		height: 44%;
+		display: flex;
+		background: @dark-grey;
+
+		.book-now__country {
+			font-family: 'Josefin Sans', sans-serif;
+			font-weight: 100;
+		}
+
+		.book-now__title {
+			font-family: 'Josefin Sans', sans-serif;
+			font-weight: 100;
+			font-size: 14px;
+			.uppercase
+		}
+
+		.book-now__text {
+			font-size: 10px;
+			line-height: 19px;
+			margin-bottom: 3%;
+		}
+
+		.book-now__button {
+			.buttons;
+			background: @blue;
+			width: 48%;
+			height: 20%;
+		}
+	}
+}
+
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.flex-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+/*End Mixins*/

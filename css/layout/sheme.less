@@ -1,0 +1,65 @@
+.sheme {
+	background: @dark-grey;
+	height: 249px;
+
+	@media (min-width: 1600px) {
+		height: 278px;
+	}
+	
+	@media (min-width: 1920px) {
+		height: 332px;
+	}
+	
+	.sheme-wrapper {
+		align-items: center;
+		background: url('../img/arrowto.png') no-repeat;
+		background-position: 48% 15%;
+		background-size: 62%;
+		display: flex;
+
+		.sheme__list {
+			display: flex;
+			height: 48%;
+			justify-content: space-around;
+			width: 100%;
+			
+			.sheme__item {
+				align-items: center;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-evenly;
+
+				.sheme-list__title {
+					.font-aleo;
+					font-size: 27px;
+					font-weight: 100;
+				}
+
+				a {
+					background: url('../img/shemeSprite.png') no-repeat;
+					background-size: 197px;
+					display: block;
+					width: 50px; 
+					height: 50px;
+					
+					&.sheme__search {
+						background-position: -9px -8px;
+					}
+
+					&.sheme__ok {
+						background-position: -72px -8px;
+					}
+
+					&.sheme__like {
+						background-position: -140px -8px;
+					}
+					
+					&:hover {
+						transform: rotateZ(1turn);
+						transition: transform 1s linear;
+					}
+				}
+			}
+		}
+	}
+}

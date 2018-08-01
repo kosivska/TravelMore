@@ -1,0 +1,85 @@
+.about-us {
+	background: url(../img/bgAbout.jpg) no-repeat;
+	background-size: cover;
+	height: 506px;
+
+	@media (min-width: 1600px) {
+		height: 630px;
+	}
+	@media (min-width: 1920px) {
+		height: 728px;
+	}
+
+	.about-us-wrapper {
+		.flex-row;
+
+		.about-us__content {
+			display: flex;
+			flex-direction: column;
+			height: 65%;
+			justify-content: space-around;
+			width: 48%;
+
+			.about-us__title {
+				.font-aleo;
+				font-size: 27px;
+				font-weight: 100;
+				margin: 12% 0 8% 0;
+			}
+
+			.about-us__description {
+				font-family: 'Josefin Sans', sans-serif;
+				font-size: 13px;
+				line-height: 20px;
+
+				&:nth-child(2) {
+					margin-bottom: 1%;
+				}
+				&:nth-child(3) {
+					margin-bottom: 5%;
+				}
+			}
+
+			.about-us__button {
+				.buttons;
+				background: @blue;
+				height: 14%;
+				opacity: 0.9;
+				width: 41%;
+			}
+		}
+	}
+
+	.about-us__images {
+		@media (min-width: 1600px) {
+			width: 42%;
+		}
+
+		.about-us__images--left {
+			float: left;
+			margin-bottom: 1%;
+
+			@media (min-width: 1600px) {
+				margin-bottom: 2%;
+			}
+		}
+
+		.about-us__images--right {
+			float: right;
+		}
+		
+		.about-us__images--size{
+			width: 73%;
+			
+			@media (min-width: 1600px) {
+				width: 73%;
+			}
+		}
+		
+	}
+	.clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}

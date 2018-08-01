@@ -1,0 +1,46 @@
+.navigation {
+	background: #5474FD;
+	width: 100%;
+	height: 59px;
+
+	@media (min-width: 1600px) {
+		height: 66px;
+	}
+
+	@media (min-width: 1920px) {
+		height: 79px;
+	}
+
+	.navigation-wrapper {
+		.flex-row;
+
+		.logo {
+			font-family: 'Josefin Sans', sans-serif;
+			font-size: 20px;
+			.uppercase
+		}
+
+		.navigation__list {
+			.uppercase;
+			.font-aleo;
+			.flex-row;
+			list-style: none;
+			padding-bottom: 1%;
+			width: 47%;
+			
+			@media (min-width: 1600px) {
+				padding-bottom: 0%;
+			}
+
+			.navigation__item{
+				font-size: 10px;
+				.links-no-decoration;
+				
+				&:hover { 
+					color: @dark-grey;
+					transition-duration: 0.2s;
+				}
+			}
+		}
+	}
+}
